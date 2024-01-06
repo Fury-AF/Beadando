@@ -1,7 +1,6 @@
 package model;
 
 public class Bond extends Instrument{
-    private String companyName;
     private String bondName;
     private double faceValue;
     private double couponRate;
@@ -9,20 +8,29 @@ public class Bond extends Instrument{
 
     // Constructor
     public Bond(String companyName, String bondName, double faceValue, double couponRate, int yearsToMaturity) {
-        this.companyName=companyName;
+
+        super(companyName);
         this.bondName = bondName;
         this.faceValue = faceValue;
         this.couponRate = couponRate;
         this.yearsToMaturity = yearsToMaturity;
     }
+    // Method to calculate the coupon payment
+    public double calculateCouponPayment() {
+        return faceValue * (couponRate / 100);
+    }
+
+    // Method to calculate the yield to maturity (YTM)
+    public double calculateYieldToMaturity(double marketPrice) {
+        double totalInterest = 0;
+        for (int i = 1; i <= yearsToMaturity; i++) {
+            totalInterest += calculateCouponPayment();
+            totalInterest += (faceValue - totalInterest) / yearsToMaturity;
+        }
+        return (faceValue + (totalInterest - marketPrice)) / ((faceValue + marketPrice) / 2);
+    }
 
     // Getter and setter
-    public String getCompanyName(){
-        return companyName;
-    }
-    public  void setCompanyName(){
-        this.companyName=companyName;
-    }
     public String getBondName() {
         return bondName;
     }
@@ -56,10 +64,6 @@ public class Bond extends Instrument{
     }
 
     // toString method to represent Bond object as a string
-    @Override
-    public String toString() {
-        return "Bond [ companyName=" + companyName + ", bondName=" + bondName + ", faceValue=" + faceValue + ", couponRate=" + couponRate
-                + ", yearsToMaturity=" + yearsToMaturity + "]";
-    }
+
 }
 
