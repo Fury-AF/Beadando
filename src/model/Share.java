@@ -1,15 +1,22 @@
 package model;
 
-public class Share {
+public class Share extends Instrument {
     private String companyName;
+
+    private String shareName;
     private double price;
     private int quantity;
 
-    public Share(String companyName, double price, int quantity) {
+
+
+    // Constructor
+    public Share( String companyName,String shareName, double price, int quantity) {
         this.companyName = companyName;
+        this.shareName = shareName;
         this.price = price;
         this.quantity = quantity;
     }
+    // Getter and setter
 
     public String getCompanyName() {
         return companyName;
@@ -17,6 +24,13 @@ public class Share {
 
     public void setCompanyName(String companyName) {
         this.companyName = companyName;
+    }
+    public Share setShareName(String shareName) {
+        this.shareName = shareName;
+        return this;
+    }
+    public String getShareName() {
+        return shareName;
     }
 
     public double getPrice() {
@@ -37,6 +51,6 @@ public class Share {
 
     @Override
     public String toString() {
-        return "Share [companyName=" + companyName + ", price=" + price + ", quantity=" + quantity + "]";
+        return "Share [ companyName=" +companyName +", shareName=" + shareName + ", price=" + price + ", quantity=" + quantity + "]";
     }
 }
