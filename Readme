@@ -31,4 +31,9 @@ Ezt kell későbbiekben felhsználni az értékelési módokban
 
 Értékelés:
 		Elméleti árolyam számolás
-		Jelen érték számolás
+                // Ha az értékelés megtörtént akkor az Értékelés minőség szerint döntöm el hogy az adott papír alul vagy felül értékel
+                // Beállítom neki az értéket
+
+		Jelen érték számolás:
+		    //Egyszerű anuitás számítása
+		    //Esedékes annuitás számítása
