@@ -19,10 +19,12 @@ public abstract class Instrument {
     public boolean isEvaluated(){
         return evaluated;
     }
-    public void setEvaluated(){
+    public void setEvaluated(boolean evaluated){
         this.evaluated=evaluated;
     }
+    @Override
     public String toString() {
         return "Instrument{companyName=" + this.companyName + ", Evaluated=" + this.evaluated + '}';
     }
+
 }

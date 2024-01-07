@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d4906f95-ecf3-4886-b0c0-c1c2d98f6896" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/EvaluationMethodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/EvaluationMethodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Bond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Bond.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Evaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Evaluation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Instrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Instrument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Share.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Share.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +42,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.EvaluationMethodes.executor": "Run",
+    "Application.EvaluationMethodes.executor": "Debug",
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -91,11 +95,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704533567394</updated>
-      <workItem from="1704533568483" duration="14780000" />
+      <workItem from="1704533568483" duration="23218000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/EvaluationMethodes.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

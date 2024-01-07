@@ -48,7 +48,9 @@ public class Share extends Instrument {
 
     @Override
     public String toString() {
-
-        return "Share [shareName=" + shareName + ", price=" + price + ", quantity=" + quantity + "]";
+        String os = super.toString();
+        return os + " <|ext-- "
+                + "Dividend{" + "Dividend=" + calculateValue() + '}';
     }
+
 }
