@@ -1,1 +1,34 @@
 #Értékpapir értékelés alapjai annak számítási módjai OOP-ban
+
+Értékpapí értékelés:
+
+Licence paraméterezhető
+
+Ha van license akkor működik
+ha nincs akkor nem
+
+Instrumentum a közös ős
+
+Részvény
+	darab
+	osztalék %
+
+	Kalkulálja az osztalék mértéket
+
+
+
+
+Kötvény:
+	névérték
+	darabszám
+	kalkulálja a kamatot
+
+
+Ezt kell későbbiekben felhsználni az értékelési módokban
+
+// jelenleg a keret van kész ami nem 100-as kell rajta még dolgozni a alap számítás benn van
+// ellenben hiányzik a mentésük és elérésük az osztályból
+
+Értékelés:
+		Elméleti árolyam számolás
+		Jelen érték számolás
